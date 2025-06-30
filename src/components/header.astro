@@ -1,4 +1,15 @@
 ---
-const { h1 } = Astro.props;
+import Link from "./link.astro"
+const { h1Text, imageSrc} = Astro.props;
 ---
-<header class="text-3xl font-semibold">{h1}</header>
+<!-- header.astro -->
+<header class="items-center py-6">
+  {imageSrc && <img src={imageSrc} class="h-64 w-auto" />}
+  <nav class="">
+  <ul class="p-24 py-0"> 
+      <li><Link href="/">Home</Link></li>
+      <li><Link href="/people">People</Link></li>
+      <li><Link href="/publications">Publications</Link></li>
+  </ul>
+</nav> 
+</header>

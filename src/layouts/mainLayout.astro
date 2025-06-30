@@ -3,24 +3,26 @@ import Nav from "../components/nav.astro";
 import Foot from "../components/footer.astro"
 import Header from "../components/header.astro"
 import "./src/styles/global.css"
-const { title } = Astro.props;
+const { title, headerText} = Astro.props;
 ---
+<!-- mainLayout.astro -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <link rel="stylesheet" href="/styles/global.css" />
   </head>
 
-  <body>
-    <Header>
+  <body class="min-h-screen flex flex-col">
+    <Header h1Text={headerText} imageSrc="../../public/logo.png">
     </Header>
       <Nav></Nav>
     <main>
-      <slot />
+      <slot class="flex-1 container mx-auto px-4 py-6"></slot>
     </main>
   </body>
   <Foot></Foot>
 </html>
+
