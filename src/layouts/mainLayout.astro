@@ -19,8 +19,8 @@ const { title, headerText} = Astro.props;
     <Header h1Text={headerText} imageSrc="../../public/logo.png">
     </Header>
       <Nav></Nav>
-    <main>
-      <slot class="flex-1 container mx-auto px-4 py-6"></slot>
+    <main class="flex-auto container mx-auto px-4 py-6 ">
+      <slot ></slot>
     </main>
   </body>
   <Foot></Foot>
