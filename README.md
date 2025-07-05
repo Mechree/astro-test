@@ -49,3 +49,9 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+# Useful References
+[Tailwind Typography Modifiers](https://github.com/tailwindlabs/tailwindcss-typography#element-modifiers)
+[Tailwind Cheat Sheet](https://nerdcave.com/tailwind-cheat-sheet)
+[W3school - HTML](https://www.w3schools.com/html/default.asp)
+[Astro - Docs](https://docs.astro.build/en/getting-started/)
