@@ -41,10 +41,10 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-|nvm install --lts |        Install/Enable latest node version             |
-|apt remove nodejs npm -y |        Remove Node             |
-| apt purge nodejs npm -y|                     |
-| apt autoremove -y |                 |
+|`nvm install --lts` |        Install/Enable latest node version             |
+|`apt remove nodejs npm -y` |        Remove Node             |
+| `apt purge nodejs npm -y`|                     |
+| `apt autoremove -y` |                 |
 
 ## 👀 Want to learn more?
 
