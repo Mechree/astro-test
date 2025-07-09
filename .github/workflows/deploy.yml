@@ -23,11 +23,11 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         with:
-        path: ./dist
-        node-version: 22.17.0 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
-        # package-manager: npm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+          path: ./dist
+          node-version: 22.17.0 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
+          # package-manager: npm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
 
-  deploy:
+    deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
