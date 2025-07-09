@@ -9,5 +9,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: "https://mechree.github.io",
-  base: "/",
+  base: "/astro-test",
 });
