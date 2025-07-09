@@ -10,4 +10,5 @@ export default defineConfig({
   },
   site: "https://mechree.github.io",
   base: "/astro-test",
+  trailingSlash: "always",
 });
