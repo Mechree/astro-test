@@ -4,7 +4,7 @@ const { h1Text, imageSrc} = Astro.props;
 ---
 <!-- header.astro -->
 <header class="items-center py-6">
-  {imageSrc && <img src={imageSrc} class="h-64 w-auto" />}
+  {imageSrc && <img src={imageSrc} alt="Logo" class="h-64 w-auto" />}
   <nav class="">
   <ul class="p-24 py-0"> 
       <li><Link href="/">Home</Link></li>

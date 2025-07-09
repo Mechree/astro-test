@@ -14,18 +14,17 @@ const { title, headerText} = Astro.props;
     <link rel="stylesheet" href="/styles/global.css" />
   </head>
 
-  <body class="">
-    <div class="flex">
+  <body class="flex auto-rows-auto ">
+    <div class="">
     <Header h1Text={headerText} imageSrc="../../public/logo.png">
     </Header>
+      <Foot>
+  </Foot>
   </div>
-  <div class="w-6/12 px-4 py mx-auto justify-items-center prose prose-h1:text-black prose-h1:text-3xl prose-h1:underline prose-h1:font-mono prose-h1:uppercase prose-h1:leading-tight prose-p:text-justify prose-p:text-black prose-p:font-sans prose-a:no-underline prose-a:hover:underline prose-a:text-justify prose-a:text-md prose-a:font-normal">
+  <div class="content-center w-6/12 px-4 py mx-auto justify-items-center prose prose-h1:text-black prose-h1:text-3xl prose-h1:underline prose-h1:font-mono prose-h1:uppercase prose-h1:leading-tight prose-p:text-justify prose-p:text-black prose-p:font-sans prose-a:no-underline prose-a:hover:underline prose-a:text-justify prose-a:text-md prose-a:font-normal">
     <slot >
     </slot>
   </div>
-      
-
   </body>
-  <Foot>
-  </Foot>
+  
 </html>
